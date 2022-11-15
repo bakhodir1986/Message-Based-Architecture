@@ -7,7 +7,7 @@ namespace MessagingClient
 {
     public class Send
     {
-        public void SendMessage(Item item)
+        public static void SendMessage(Item item, string action)
         {
             var factory = new ConnectionFactory() { HostName = "localhost" };
             using (var connection = factory.CreateConnection())
@@ -19,7 +19,7 @@ namespace MessagingClient
                                      autoDelete: false,
                                      arguments: null);
 
-                string message = item.ToString();
+                string message = $"Item: {item} with action {action}";
                 var body = Encoding.UTF8.GetBytes(message);
 
                 channel.BasicPublish(exchange: "",

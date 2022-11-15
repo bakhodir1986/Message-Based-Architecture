@@ -1,4 +1,5 @@
 ﻿using Catalog_Service_BLL;
+using MessagingClient;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Catalog_Service_Rest_Api.Controllers
@@ -41,6 +42,7 @@ namespace Catalog_Service_Rest_Api.Controllers
         {
             if (string.IsNullOrEmpty(categoryid) || item == null) return BadRequest();
             categoryService.AddItem(new Guid(categoryid), item);
+            Send.SendMessage(item, "Create");
 
             return Ok();
         }
@@ -61,6 +63,7 @@ namespace Catalog_Service_Rest_Api.Controllers
         {
             if (item == null) return BadRequest();
             categoryService.UpdateItem(item);
+            Send.SendMessage(item, "Update");
 
             return Ok();
         }

@@ -10,7 +10,7 @@ namespace MessagingClient
 {
     public class Receive
     {
-        public string ReceiveMessage()
+        public static string ReceiveMessage()
         {
             string targetMessage = string.Empty;
             var factory = new ConnectionFactory() { HostName = "localhost" };

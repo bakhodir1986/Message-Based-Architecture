@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Catalog Service BLL\Catalog Service BLL.csproj" />
     <ProjectReference Include="..\Catalog Service DAL\Catalog Service DAL.csproj" />
+    <ProjectReference Include="..\MessagingClient\MessagingClient.csproj" />
   </ItemGroup>
 
 </Project>
