@@ -37,5 +37,10 @@ namespace Catalog_Service_BLL
          }
          
          public uint Amount { get; set; }
+
+        public override string ToString()
+        {
+            return $"Name: {Name} and Price: {Price}";
+        }
     }
 }

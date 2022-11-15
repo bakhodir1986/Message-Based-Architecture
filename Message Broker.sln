@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog Service DAL", "Cata
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog Service BLL", "Catalog Service BLL\Catalog Service BLL.csproj", "{D2201036-3813-4B94-9EFF-202CFFA91F6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket Service", "Basket Service\Basket Service.csproj", "{41A7FF09-B696-43DB-9F69-EE2E35E713E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basket Service", "Basket Service\Basket Service.csproj", "{41A7FF09-B696-43DB-9F69-EE2E35E713E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingClient", "MessagingClient\MessagingClient.csproj", "{FC5F958B-1AB2-4C7E-B747-9EB12225563E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{41A7FF09-B696-43DB-9F69-EE2E35E713E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41A7FF09-B696-43DB-9F69-EE2E35E713E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41A7FF09-B696-43DB-9F69-EE2E35E713E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC5F958B-1AB2-4C7E-B747-9EB12225563E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC5F958B-1AB2-4C7E-B747-9EB12225563E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC5F958B-1AB2-4C7E-B747-9EB12225563E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC5F958B-1AB2-4C7E-B747-9EB12225563E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
